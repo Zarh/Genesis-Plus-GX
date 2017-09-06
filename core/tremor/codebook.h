@@ -20,6 +20,10 @@
 
 #include "ogg.h"
 
+#ifdef __CELLOS_LV2__
+#include "alloca.h"
+#endif
+
 /* This structure encapsulates huffman and VQ style encoding books; it
    doesn't do anything specific to either.
 
